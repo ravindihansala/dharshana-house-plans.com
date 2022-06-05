@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport"content="width=device-width, initial-scale=1.0" >
+        <title>Darshana House Plan - Gampola</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section id="home">
+            <div class="LANDS">
+                <nav>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html">HOME</a> </li>
+                            <li><a href="index(2).html">HOUSE PLAN</a></li>
+                            <li> <a href="index(3).html">LANDS FOR SALE</a></li>
+                            <li><a href="index.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars"  onclick="showeMenu()"></i>
+                    <div class="newland">
+                        <h1>LANDS FOR SALE</h1>
+                        <p>Where are lands avalable for you?</p>
+                    </div>
+                </nav>
+            </div>    
+        </section>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showeMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+            </script>
+    
+             <!-------smooth scroll---->
+             <script src="js/smooth-scroll.js"></script>
+             <script>
+                 var scroll = new SmoothScroll('a[href*="#"]');
+             </script>
